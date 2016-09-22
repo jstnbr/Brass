@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brass: Button</title>
+
+	<link rel="stylesheet" href="../brass.min.css">
+	<link rel="stylesheet" href="asset/css/colors/colors.min.css">
+	<link rel="stylesheet" href="asset/css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="asset/css/style.css">
+	<link rel="stylesheet" href="asset/prism/prism.css">
+
+	<script src="asset/prism/prism.min.js"></script>
+</head>
+
+<body class="px-h">
+	<div class="row py-2 mt-1h">
+		<div class="sm-c12">
+			<ul class="ul ul-bare ul-lg strong fl">
+				<li>
+					<a class="dib" href="index.html">
+						<img src="asset/img/brass-logo-sm.png" style="max-height:1.875rem;">
+					</a>
+				</li>
+				<li class="my-1">
+					Portable CSS micro-library
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row py-2">
+		<div class="sm-c12">
+			<ul class="ul-i ul-lg strong">
+				<li class="mb-1">
+					<a href="get-started.html">Get Started</a>
+				</li>
+				<li class="mb-1">
+					<a href="typography.html">Typography</a>
+				</li>
+				<li class="mb-1">
+					<a href="grid.html">Grid</a>
+				</li>
+				<li class="mb-1">
+					<a href="layout.html">Layout</a>
+				</li>
+				<li class="mb-1">
+					<a href="button.html">Button</a>
+				</li>
+				<li class="mb-1">
+					<a href="form.html">Form</a>
+				</li>
+				<li class="mb-1">
+					<a href="table.html">Table</a>
+				</li>
+				<li class="mb-1">
+					<a href="white-space.html">White Space</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row py-1 mb-1">
+		<div class="sm-c12">
+			<h2 class="h2 heading">Button</h2>
+			<p class="h5">
+				Brass provides a fundamental button structure for elements that can be customized with utilities for styling.
+			</p>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Basic</h3>
+			<p>
+				The <code>.btn</code> class applies a basic button structure to an element.
+			</p>
+
+			<div class="example p-1h">
+				<button class="btn">Button</button>
+				<a class="btn" href="#!">Link Button</a>
+				<input class="btn" type="button" value="Input Button">
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;button class="btn">Button&lt;/button>
+&lt;a class="btn" href="#!">Link Button&lt;/a>
+&lt;input class="btn" type="button" value="Input Button"></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Color</h3>
+			<p>
+				Use your own color palette, or import a color library such as <a class="strong" href="http://clrs.cc">Colors.css</a>.
+			</p>
+			<div class="example p-1h">
+				<a href="#!" class="btn bg-silver">Button</a>
+				<a href="#!" class="btn bg-blue white">Primary Button</a>
+				<a href="#!" class="btn bg-green white">Secondary Button</a>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;a href="#" class="btn bg-silver">Button&lt;/a>
+&lt;a href="#" class="btn bg-blue white">Primary Button&lt;/a>
+&lt;a href="#" class="btn bg-green white">Secondary Button&lt;/a></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<p class="h3 heading">
+				Outline
+			</p>
+			<p>
+				Create an outlined button by setting the <code>border-color</code> property. This can be done using CSS, or a color library such as <a class="strong" href="http://clrs.cc">Colors.css</a>.
+			</p>
+			<div class="example p-1h">
+				<a href="#" class="btn border--gray gray">Button</a>
+				<a href="#" class="btn border--blue blue">Primary Button</a>
+				<a href="#" class="btn border--green green">Secondary Button</a>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;a href="#" class="btn border--gray gray">Button&lt;/a>
+&lt;a href="#" class="btn border--blue blue">Primary Button&lt;/a>
+&lt;a href="#" class="btn border--green green">Secondary Button&lt;/a></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<p class="h3 heading">
+				Style
+			</p>
+			<p>
+				Add utility classes or icons for a variety of results.
+			</p>
+			<div class="example p-1h">
+				<p>
+					<a href="#" class="btn rad bg-silver"><i class="fa fa-bars mr-h"></i>Menu</a>
+					<a href="#" class="btn rad bg-blue white"><i class="fa fa-toggle-on mr-h"></i>Toggle</a>
+					<a href="#" class="btn rad bg-green white"><i class="fa fa-plus mr-h"></i>Add</a>
+					<a href="#" class="btn rad bg-red white"><i class="fa fa-close mr-h"></i>Close</a>
+				</p>
+
+				<p>
+					<a href="#" class="btn btn-sm rad bg-navy small white"><i class="fa fa-user mr-h"></i>4 Users online</a>
+					<a href="#" class="btn btn-sm rad bg-teal small white"><i class="fa fa-map-marker mr-h"></i>Current location</a>
+					<a href="#" class="btn btn-sm rad bg-olive small white">75% <i class="fa fa-battery-3"></i></a>
+				</p>
+
+				<p>
+					<a href="#" class="btn btn-lg rad bg-blue h5 white db">Block Button</a>
+				</p>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;p>
+  &lt;a href="#" class="btn rad bg-silver">&lt;i class="fa fa-bars mr-h">&lt;/i>Menu&lt;/a>
+  &lt;a href="#" class="btn rad bg-blue white">&lt;i class="fa fa-toggle-on mr-h">&lt;/i>Toggle&lt;/a>
+  &lt;a href="#" class="btn rad bg-green white">&lt;i class="fa fa-plus mr-h">&lt;/i>Add&lt;/a>
+  &lt;a href="#" class="btn rad bg-red white">&lt;i class="fa fa-close mr-h">&lt;/i>Close&lt;/a>
+&lt;/p>
+
+&lt;p>
+  &lt;a href="#" class="btn btn-sm rad bg-navy white small">&lt;i class="fa fa-user mr-h">&lt;/i>4 Users online&lt;/a>
+  &lt;a href="#" class="btn btn-sm rad bg-teal white small">&lt;i class="fa fa-map-marker mr-h">&lt;/i>Current location&lt;/a>
+  &lt;a href="#" class="btn btn-sm rad bg-olive white small">75% &lt;i class="fa fa-battery-3">&lt;/i>&lt;/a>
+&lt;/p>
+
+&lt;p>
+  &lt;a href="#" class="btn btn-lg rad bg-blue white h5 db">Block Button&lt;/a>
+&lt;/p></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<p class="h3 heading">
+				Size
+			</p>
+			<p>
+				Four different button sizes are available including the default, and three additional sizes <code>.btn-sm</code>, <code>.btn-md</code>, and <code>.btn-lg</code>.
+			</p>
+			<div class="example p-1h">
+				<p class="h4">
+					<a href="#" class="btn bg-blue white btn-lg rad">Large Button</a>
+					<a href="#" class="btn bg-blue white btn-md rad">Medium Button</a>
+					<a href="#" class="btn bg-blue white rad">Default Button</a>
+					<a href="#" class="btn bg-blue white btn-sm rad">Small Button</a>
+				</p>
+
+				<p class="h5">
+					<a href="#" class="btn bg-blue white btn-lg rad">Large Button</a>
+					<a href="#" class="btn bg-blue white btn-md rad">Medium Button</a>
+					<a href="#" class="btn bg-blue white rad">Default Button</a>
+					<a href="#" class="btn bg-blue white btn-sm rad">Small Button</a>
+				</p>
+
+				<p class="h6">
+					<a href="#" class="btn bg-blue white btn-lg rad">Large Button</a>
+					<a href="#" class="btn bg-blue white btn-md rad">Medium Button</a>
+					<a href="#" class="btn bg-blue white rad">Default Button</a>
+					<a href="#" class="btn bg-blue white btn-sm rad">Small Button</a>
+				</p>
+
+				<p class="small">
+					<a href="#" class="btn bg-blue white btn-lg rad">Large Button</a>
+					<a href="#" class="btn bg-blue white btn-md rad">Medium Button</a>
+					<a href="#" class="btn bg-blue white rad">Default Button</a>
+					<a href="#" class="btn bg-blue white btn-sm rad">Small Button</a>
+				</p>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;p class="h4">
+  &lt;a href="#" class="btn btn-lg bg-blue white rad">Large Button&lt;/a>
+  &lt;a href="#" class="btn btn-md bg-blue white rad">Medium Button&lt;/a>
+  &lt;a href="#" class="btn bg-blue white rad">Default Button&lt;/a>
+  &lt;a href="#" class="btn btn-sm bg-blue white rad">Small Button&lt;/a>
+&lt;/p>
+
+&lt;p class="h5">
+  &lt;a href="#" class="btn btn-lg bg-blue white rad">Large Button&lt;/a>
+  &lt;a href="#" class="btn btn-md bg-blue white rad">Medium Button&lt;/a>
+  &lt;a href="#" class="btn bg-blue white rad">Default Button&lt;/a>
+  &lt;a href="#" class="btn btn-sm bg-blue white rad">Small Button&lt;/a>
+&lt;/p>
+
+&lt;p class="h6">
+  &lt;a href="#" class="btn btn-lg bg-blue white rad">Large Button&lt;/a>
+  &lt;a href="#" class="btn btn-md bg-blue white rad">Medium Button&lt;/a>
+  &lt;a href="#" class="btn bg-blue white rad">Default Button&lt;/a>
+  &lt;a href="#" class="btn btn-sm bg-blue white rad">Small Button&lt;/a>
+&lt;/p>
+
+&lt;p class="small">
+  &lt;a href="#" class="btn btn-lg bg-blue white rad">Large Button&lt;/a>
+  &lt;a href="#" class="btn btn-md bg-blue white rad">Medium Button&lt;/a>
+  &lt;a href="#" class="btn bg-blue white rad">Default Button&lt;/a>
+  &lt;a href="#" class="btn btn-sm bg-blue white rad">Small Button&lt;/a>
+&lt;/p></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row py-4">
+		<div class="xs-c6">
+			<a class="strong" href="layout.html">&larr; Layout</a>
+		</div>
+		<div class="xs-c6 text-r fr">
+			<a class="strong" href="form.html">Form &rarr;</a>
+		</div>
+	</div>
+
+	<div class="row py-1 mt-2">
+		<div class="xs-c8">
+			<ul class="ul-i ul-md strong fl">
+				<li class="mb-1">
+					<a href="index.html">Brass</a>
+				</li>
+				<li class="mb-1">
+					<a href="get-started.html">Documentation</a>
+				</li>
+				<li class="mb-1">
+					<a href="examples.html">Examples</a>
+				</li>
+				<li class="mb-1">
+					<a href="http://github.com/jstnbr/brass">GitHub</a>
+				</li>
+				<li class="mb-1">
+					<iframe src="https://ghbtns.com/github-btn.html?user=jstnbr&repo=brass&type=star&count=true" frameborder="0" scrolling="0" width="125px" height="20px" style="margin-bottom:-3px;"></iframe>
+				</li>
+			</ul>
+		</div>
+		<div class="xs-c4">
+			<ul class="ul-i ul-md strong text-r fr">
+				<li>
+					<a href="http://jstnbr.co">Made by jstnbr.co</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

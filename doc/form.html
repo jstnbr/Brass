@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brass: Form</title>
+
+	<link rel="stylesheet" href="../brass.min.css">
+	<link rel="stylesheet" href="asset/css/colors/colors.min.css">
+	<link rel="stylesheet" href="asset/css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="asset/css/style.css">
+	<link rel="stylesheet" href="asset/prism/prism.css">
+
+	<script src="asset/prism/prism.min.js"></script>
+</head>
+
+<body class="px-h">
+	<div class="row py-2 mt-1h">
+		<div class="sm-c12">
+			<ul class="ul ul-bare ul-lg strong fl">
+				<li>
+					<a class="dib" href="index.html">
+						<img src="asset/img/brass-logo-sm.png" style="max-height:1.875rem;">
+					</a>
+				</li>
+				<li class="my-1">
+					Portable CSS micro-library
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row py-2">
+		<div class="sm-c12">
+			<ul class="ul-i ul-lg strong">
+				<li class="mb-1">
+					<a href="get-started.html">Get Started</a>
+				</li>
+				<li class="mb-1">
+					<a href="typography.html">Typography</a>
+				</li>
+				<li class="mb-1">
+					<a href="grid.html">Grid</a>
+				</li>
+				<li class="mb-1">
+					<a href="layout.html">Layout</a>
+				</li>
+				<li class="mb-1">
+					<a href="button.html">Button</a>
+				</li>
+				<li class="mb-1">
+					<a href="form.html">Form</a>
+				</li>
+				<li class="mb-1">
+					<a href="table.html">Table</a>
+				</li>
+				<li class="mb-1">
+					<a href="white-space.html">White Space</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row py-1 mb-1">
+		<div class="sm-c12">
+			<h2 class="h2 heading">Form</h2>
+			<p class="h5">
+				Brass provides a fundamental structure to form elements that can be customized using grid and utilities for styling.
+			</p>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Basic</h3>
+			<p>
+				The <code>.form</code> class creates a basic stacked structure for inputs.
+			</p>
+			<div class="example p-1h">
+				<form class="form">
+					<label>Input</label>
+					<input type="text">
+					<label>Select</label>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<label>Textarea</label>
+					<textarea rows="3"></textarea>
+				</form>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;form class="form">
+  &lt;label>Input&lt;/label>
+  &lt;input type="text">
+  &lt;label>Select&lt;/label>
+  &lt;select>
+    &lt;option>1&lt;/option>
+    &lt;option>2&lt;/option>
+    &lt;option>3&lt;/option>
+  &lt;/select>
+  &lt;label>Textarea&lt;/label>
+  &lt;textarea rows="3">&lt;/textarea>
+&lt;/form></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Color</h3>
+			<p>
+				Change the color of inputs by setting the <code>border-color</code> using CSS, or import a color library such as <a class="strong" href="http://clrs.cc">Colors</a>.
+			</p>
+			<div class="example p-1h">
+				<form class="form">
+					<label>Default</label>
+					<input class="mb-1" type="text">
+
+					<label>Focused</label>
+					<input class="border--blue mb-1" type="text">
+
+					<label>Success</label>
+					<input class="border--green mb-1" type="text">
+
+					<label>Required</label>
+					<input class="border--red mb-1" type="text">
+
+					<button class="btn bg-blue white" type="submit">Submit</button>
+				</form>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;form class="form">
+  &lt;label>Default&lt;/label>
+  &lt;input class="mb-1" type="text">
+
+  &lt;label>Focused&lt;/label>
+  &lt;input class="border--blue mb-1" type="text">
+
+  &lt;label>Success&lt;/label>
+  &lt;input class="border--green mb-1" type="text">
+
+  &lt;label>Required&lt;/label>
+  &lt;input class="border--red mb-1" type="text">
+
+  &lt;button class="btn bg-blue white" type="submit">Submit&lt;/button>
+&lt;/form></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Inline</h3>
+			<p>
+				Set forms inline using the <code>.form-i</code> class.
+			</p>
+			<div class="example p-1h">
+				<form class="form form-i">
+					<label>Search</label>
+					<input type="text">
+					<button type="submit" class="btn bg-gray">Submit</button>
+				</form>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;form class="form form-i">
+  &lt;label>Search&lt;/label>
+  &lt;input type="text">
+  &lt;button type="submit" class="btn bg-gray">Submit&lt;/button>
+&lt;/form></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Horizontal</h3>
+			<p>
+				Inputs can be organized into rows and columns to create horizontal style forms.
+			</p>
+			<div class="example p-1h">
+				<form class="form row">
+					<div class="sm-c2">
+						<label>Input</label>
+					</div>
+					<div class="sm-c10">
+						<input class="mb-1" type="text">
+					</div>
+					<div class="sm-c2">
+						<label>Select</label>
+					</div>
+					<div class="sm-c10">
+						<select class="mb-1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</div>
+					<div class="sm-c2">
+						<label>Textarea</label>
+					</div>
+					<div class="sm-c10">
+						<textarea class="mb-1"></textarea>
+					</div>
+					<div class="sm-c10 sm-offs-2">
+						<label class="mb-1">
+							<input class="v-mid" type="checkbox"> Checkbox
+						</label>
+					</div>
+					<div class="sm-c10 sm-offs-2">
+						<button class="btn bg-gray" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;form class="form row">
+  &lt;div class="sm-c2">
+    &lt;label>Input&lt;/label>
+  &lt;/div>
+  &lt;div class="sm-c10">
+    &lt;input class="mb-1" type="text">
+  &lt;/div>
+  &lt;div class="sm-c2">
+    &lt;label>Select&lt;/label>
+  &lt;/div>
+  &lt;div class="sm-c10">
+    &lt;select class="mb-1">
+      &lt;option>1&lt;/option>
+      &lt;option>2&lt;/option>
+      &lt;option>3&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="sm-c2">
+    &lt;label>Textarea&lt;/label>
+  &lt;/div>
+  &lt;div class="sm-c10">
+    &lt;textarea class="mb-1">&lt;/textarea>
+  &lt;/div>
+  &lt;div class="sm-c10 sm-offs-2">
+    &lt;label class="mb-1">
+      &lt;input class="v-mid" type="checkbox"> Checkbox
+    &lt;/label>
+  &lt;/div>
+  &lt;div class="sm-c10 sm-offs-2">
+    &lt;button class="btn bg-gray" type="submit">Submit&lt;/button>
+  &lt;/div>
+&lt;/form></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Sizing</h3>
+			<p>
+				Four different form input size options are available including the default, and three additional sizes <code>.form-sm</code>, <code>.form-md</code>, and <code>.form-lg</code>.
+			</p>
+			<div class="example p-1h">
+				<form class="form form-sm mb-1">
+					<label>Input</label>
+					<input type="text">
+				</form>
+				<form class="form mb-1">
+					<label>Input</label>
+					<input type="text">
+				</form>
+				<form class="form form-md mb-1">
+					<label>Input</label>
+					<input type="text">
+				</form>
+				<form class="form form-lg mb-1">
+					<label>Input</label>
+					<input type="text">
+				</form>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;form class="form form-sm mb-1">
+  &lt;label>Input&lt;/label>
+  &lt;input type="text">
+&lt;/form>
+
+&lt;form class="form mb-1">
+  &lt;label>Input&lt;/label>
+  &lt;input type="text">
+&lt;/form>
+
+&lt;form class="form form-md mb-1">
+  &lt;label>Input&lt;/label>
+  &lt;input type="text">
+&lt;/form>
+
+&lt;form class="form form-lg mb-1">
+  &lt;label>Input&lt;/label>
+  &lt;input type="text">
+&lt;/form></code></pre>
+			</div>
+			<p class="heading">
+				Add type scale utilities such as <code>.small</code> and <code>.h1</code> – <code>.h6</code> classes for more sizing options.
+			</p>
+			<div class="example p-1h">
+				<form class="form form-sm small mb-1">
+					<label>Input</label>
+					<input type="text">
+				</form>
+				<form class="form form-lg h5 mb-1">
+					<label>Input</label>
+					<input type="text">
+				</form>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;form class="form form-sm small mb-1">
+  &lt;label>Input&lt;/label>
+  &lt;input type="text">
+&lt;/form>
+
+&lt;form class="form form-lg h5 mb-1">
+  &lt;label>Input&lt;/label>
+  &lt;input type="text">
+&lt;/form></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-4">
+		<div class="sm-c12">
+			<h3 class="h3 heading">Style</h3>
+			<p>
+				Style forms using rows, columns, and utility classes.
+			</p>
+			<div class="example p-1h">
+				<form class="form row spacing">
+					<div class="sm-c6">
+						<label class="btn-sm strong px-0">Input</label>
+						<input class="rad-sm border--gray" type="text">
+					</div>
+					<div class="sm-c6">
+						<label class="btn-sm strong px-0">Input</label>
+						<input class="rad-sm border--gray" type="text">
+					</div>
+					<div class="sm-c6">
+						<label class="btn-sm strong px-0">Input</label>
+						<input class="rad-sm border--gray" type="text">
+					</div>
+					<div class="sm-c6">
+						<label class="btn-sm strong px-0">Input</label>
+						<input class="rad-sm border--gray" type="text">
+					</div>
+					<div class="sm-c12">
+						<label class="btn-sm strong px-0">Textarea</label>
+						<textarea class="rad-sm border--gray" rows="3"></textarea>
+					</div>
+					<div class="sm-c12">
+						<label>
+							<input class="v-mid" type="checkbox"> Checkbox
+						</label>
+					</div>
+					<div class="sm-c12">
+						<button class="btn strong rad-sm bg-blue white" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="example">
+<pre><code class="small px-1h py-1 language-markup">&lt;form class="form row spacing">
+  &lt;div class="sm-c12">
+    &lt;label>Input&lt;/label>
+    &lt;input type="text">
+  &lt;/div>
+  &lt;div class="sm-c12">
+    &lt;label>Select&lt;/label>
+    &lt;select>
+      &lt;option>1&lt;/option>
+      &lt;option>2&lt;/option>
+      &lt;option>3&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="sm-c12">
+    &lt;label>Textarea&lt;/label>
+    &lt;textarea rows="3">&lt;/textarea>
+  &lt;/div>
+  &lt;div class="sm-c12">
+    &lt;label>File Upload&lt;/label>
+    &lt;input type="file">
+  &lt;/div>
+  &lt;div class="sm-c12">
+    &lt;label>
+      &lt;input class="v-mid" type="checkbox"> Checkbox
+    &lt;/label>
+  &lt;/div>
+  &lt;div class="sm-c12">
+    &lt;button class="btn bg-gray" type="submit">Submit&lt;/button>
+  &lt;/div>
+&lt;/form></code></pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="row py-4">
+		<div class="xs-c6">
+			<a class="strong" href="grid.html">&larr; Grid</a>
+		</div>
+		<div class="xs-c6 text-r fr">
+			<a class="strong" href="table.html">Table &rarr;</a>
+		</div>
+	</div>
+
+	<div class="row py-1 mt-2">
+		<div class="xs-c8">
+			<ul class="ul-i ul-md strong fl">
+				<li class="mb-1">
+					<a href="index.html">Brass</a>
+				</li>
+				<li class="mb-1">
+					<a href="get-started.html">Documentation</a>
+				</li>
+				<li class="mb-1">
+					<a href="examples.html">Examples</a>
+				</li>
+				<li class="mb-1">
+					<a href="http://github.com/jstnbr/brass">GitHub</a>
+				</li>
+				<li class="mb-1">
+					<iframe src="https://ghbtns.com/github-btn.html?user=jstnbr&repo=brass&type=star&count=true" frameborder="0" scrolling="0" width="125px" height="20px" style="margin-bottom:-3px;"></iframe>
+				</li>
+			</ul>
+		</div>
+		<div class="xs-c4">
+			<ul class="ul-i ul-md strong text-r fr">
+				<li>
+					<a href="http://jstnbr.co">Made by jstnbr.co</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

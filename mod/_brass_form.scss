@@ -1,0 +1,50 @@
+/**
+ * Form
+ */
+
+.form
+{
+	label { display: inline-block; }
+	input,
+	select,
+	textarea {
+		padding: ($base * .5) ($base * .75);
+		width: 100%;
+		border-width: 1px;
+		border-style: solid;
+		font-family: inherit;
+		font-size: inherit;
+		display: block;
+	}
+	input[type=checkbox],
+	input[type=radio] {
+		width: auto;
+		display: inline-block;
+	}
+	input[type=file] {
+		padding: 0;
+		width: auto;
+		border: 0;
+	}
+}
+
+.form-i label,
+.form-i input,
+.form-i select,
+.form-i textarea {
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.form-sm input,
+.form-sm select,
+.form-sm textarea { padding: ($base * .25) ($base * .5); }
+
+.form-md input,
+.form-md select,
+.form-md textarea { padding: $base * .75; }
+
+.form-lg input,
+.form-lg select,
+.form-lg textarea { padding: $base; }

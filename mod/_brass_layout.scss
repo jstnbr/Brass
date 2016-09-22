@@ -1,0 +1,28 @@
+/**
+ * Layout
+ */
+
+.dn  { display: none; }
+.db  { display: block; }
+.dib { display: inline-block; }
+.di  { display: inline; }
+.dt  { display: table; }
+.dtc { display: table-cell; }
+
+.fn { float: none; }
+.fl { float: left; }
+.fr { float: right; }
+.cb { clear: both; }
+
+.full  { width: 100%; }
+.fit   { max-width: 100%; }
+.fluid { max-width: none; }
+
+.rad    { border-radius: $base * .5; }
+.rad-sm { border-radius: $base * .25; }
+.rad-md { border-radius: $base * .75; }
+.rad-lg { border-radius: $base; }
+
+.v-btm { vertical-align: bottom; }
+.v-mid { vertical-align: middle; }
+.v-top { vertical-align: top; }

@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html { font-size: 16px; }
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	color: #111;
+}
+
+a {
+	color: #111;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+p { margin: 0 0 1rem; }
+
+code {
+	padding: .125rem;
+	border-bottom: .125rem solid rgba(0, 0, 0, .125);
+	font-family: 'Roboto Mono', Menlo, Consolas, 'Courier New', Courier, monospace;
+	font-size: .875rem;
+	color: #0074d9;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+pre code {
+	background: #f8f8f8;
+	border: 0;
+	color: #111;
+	display: block;
+	white-space: pre;
+}
+
+.example { border: 1px solid #ddd; }
+
+.example + .example { border-top: 0; }
+
+.example div:empty:after {
+	content: attr(class);
+	padding: .75rem;
+	background: #eee;
+	border: 1px solid #ddd;
+	color: #999;
+	display: block;
+}
+
+.nav {
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.hero {
+	margin: 0 -1em;
+	height: 100vh;
+	background: #bbb;
+	background: linear-gradient(135deg, #fff, #1f1f1f);
+}

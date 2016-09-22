@@ -1,0 +1,36 @@
+/**
+ * Table
+ */
+
+.table
+{
+	width: 100%;
+	border-collapse: collapse;
+	th, td {
+		padding: $base * .5;
+		text-align: left;
+		vertical-align: bottom;
+	}
+	th { vertical-align: top; }
+}
+
+.table-b tbody tr {
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.table-sm th,
+.table-sm td { padding: $base * .25; }
+
+.table-md th,
+.table-md td { padding: $base * .75; }
+
+.table-lg th,
+.table-lg td { padding: $base; }
+
+@media (max-width: $xs) {
+	.table-r {
+		display: block;
+		overflow-x: auto;
+	}
+}

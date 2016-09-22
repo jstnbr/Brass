@@ -1,0 +1,67 @@
+/**
+ * Typography
+ */
+
+.h1    { font-size: $base * 4; }
+.h2    { font-size: $base * 3; }
+.h3    { font-size: $base * 2; }
+.h4    { font-size: $base * 1.5; }
+.h5    { font-size: $base * 1.25; }
+.h6    { font-size: $base; }
+.small { font-size: $base * .75; }
+
+.normal { font-weight: normal; }
+.strong { font-weight: bold; }
+.italic { font-style: italic; }
+
+.text-l { text-align: left; }
+.text-r { text-align: right; }
+.text-c { text-align: center; }
+
+.heading
+{
+	margin-top: $base * 1.5;
+	margin-bottom: $base;
+}
+
+.ul          { padding-left: $base; }
+.ul > li     { margin: $base * .5 0; }
+.ul .ul > li { margin: $base * .5 0; }
+
+.ul.ul-sm > li,
+.ul .ul.ul-sm > li { margin: $base * .25 0; }
+
+.ul.ul-md > li,
+.ul .ul.ul-md > li { margin: $base * .75 0; }
+
+.ul.ul-lg > li,
+.ul .ul.ul-lg > li { margin: $base 0; }
+
+.ul-i
+{
+	margin: 0 ((-$base) * .5);
+	padding: 0;
+	& > li {
+		padding: 0 ($base * .5);
+		display: inline-block;
+	}
+}
+
+.ul-i.ul-sm      { margin: 0 ((-$base) * .25); }
+.ul-i.ul-sm > li { padding: 0 ($base * .25); }
+
+.ul-i.ul-md      { margin: 0 ((-$base) * .75); }
+.ul-i.ul-md > li { padding: 0 ($base * .75); }
+
+.ul-i.ul-lg      { margin: 0 (-$base); }
+.ul-i.ul-lg > li { padding: 0 $base; }
+
+.ul-bare
+{
+	padding: 0;
+	list-style: none;
+}
+
+.ul-disc { list-style: disc; }
+.ul-circ { list-style: circle; }
+.ul-deci { list-style: decimal; }

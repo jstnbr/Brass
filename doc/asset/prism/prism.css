@@ -1,0 +1,12 @@
+.token.tag,
+.token.property,
+.token.punctuation { color: #001f3f; }
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted { color: #3d9970; }
+.token.atrule,
+.token.attr-value,
+.token.keyword { color: #0074d9; }
